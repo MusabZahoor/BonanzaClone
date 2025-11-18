@@ -5,8 +5,8 @@ import "./HeaderOne.css"
 
 const HeaderOne = () => {
   return (
-<>
-<Navbar bg="white" expand="lg" className="header-top wholeNavbar">
+< >
+<Navbar bg="white" expand="lg" className="header-top wholeNavbar " style={{width:"95%"}}> 
 <Container className='d-flex justify-content-between align-items-center'>
 
 <div style={{width:"150px"}}></div>
@@ -37,7 +37,7 @@ const HeaderOne = () => {
 </Container>
 </Navbar>
 
-<Navbar bg='white' expand='md' className='border-bottom py-2 wholeNavbar'>
+<Navbar bg='white' expand='md' className='border-bottom py-2 wholeNavbar' style={{width:"95%"}}>
 <Container style={{fontSize:"18px"}}>
   <Nav className='mx-auto fw-semibold text-uppercase small lowerNavbar'>
     <Nav.Link href='#' className='text-danger'>Sale</Nav.Link>

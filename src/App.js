@@ -9,7 +9,7 @@ const App = () => {
     <div>
      <HeaderOne/>
      <CloneCarousel/>
-     <CloneFooter/>
+     <CloneFooter />
     </div>
   )
 }

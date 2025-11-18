@@ -33,6 +33,21 @@ const CloneCarousel = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
+
+<div className='mt-4   p-2'>
+<div className='d-flex gap-2  ps-4 justify-content-center '>
+  <img src='/images/category1.webp' className='' style={{width:"27%"}} />
+  <img src='/images/category2.webp' className='' style={{width:"27%"}}/>
+  <img src='/images/category3.webp' className='' style={{width:"27%"}}/>
+
+</div>
+<div className='d-flex gap-2 ps-4 justify-content-center mt-2 '>
+  <img src='/images/category4.webp' className='' style={{width:"27%"}} />
+  <img src='/images/category5.webp' className='' style={{width:"27%"}}/>
+  <img src='/images/category6.webp' className='' style={{width:"27%"}}/>
+
+</div>
+</div>
     </>
   )
 }

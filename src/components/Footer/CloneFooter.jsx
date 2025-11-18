@@ -10,9 +10,9 @@ const CloneFooter = () => {
   
   return (
     <>
-   <footer className="site-footer">
-      <Container fluid className="footer-top py-5">
-        <Container>
+   <footer className="site-footer" >
+      <Container fluid className="footer-top py-5" >
+        <Container >
           <Row className="gy-4">
           
             <Col xs={12} md={6} lg={3}>
@@ -69,15 +69,15 @@ const CloneFooter = () => {
         </Container>
       </Container>
 
-      <div className="footer-bottom py-3">
-        <Container className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div className="footer-bottom py-3" >
+        <Container className="d-flex flex-column flex-md-row justify-content-between align-items-center" lg={5}>
           <div className="powered">
             Powered By <a href="https://siardigital.com" target="_blank" rel="noreferrer">SIAR</a>
           </div>
 
-          <div className="d-flex align-items-center mt-2 mt-md-0">
+          <div className="d-flex align-items-center mt-2 mt-md-0" lg={5}>
             <div className="me-3 small">Select your currency</div>
-            <select className="form-select form-select-sm" style={{width: 130}}>
+            <select className="form-select form-select-sm" >
               <option>PKR</option>
               <option>EUR</option>
               <option>USD</option>
