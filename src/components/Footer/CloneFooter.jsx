@@ -2,6 +2,7 @@
 import { Container, Row, Col, Form, Button, Nav } from "react-bootstrap";
 import { FaInstagram, FaFacebook } from "react-icons/fa"; 
 import "./CloneFooter.css"; 
+import { Link, NavLink } from "react-router-dom";
 
 const CloneFooter = () => {
 
@@ -32,11 +33,11 @@ const CloneFooter = () => {
             <Col xs={12} md={6} lg={3}>
               <h5 className="footer-title">INFORMATION</h5>
               <Nav className="flex-column">
-                <Nav.Link href="/about">About Us</Nav.Link>
-                <Nav.Link href="https://track.siardigital.com" target="_blank" rel="noreferrer">Track Your Order</Nav.Link>
-                <Nav.Link href="/shipping">Shipping Information</Nav.Link>
-                <Nav.Link href="/store-locator">Store Locator</Nav.Link>
-                <Nav.Link href="/terms">Terms of Service</Nav.Link>
+                <Nav.Link as={NavLink} to = '/AboutUs'>About Us</Nav.Link>
+                <Nav.Link as={NavLink} to ='/TrackYourOrder'>Track Your Order</Nav.Link>
+                <Nav.Link as={NavLink} to ='/ShippingInformation'>Shipping Information</Nav.Link>
+                <Nav.Link as={NavLink} to = '/StoreLocator'>Store Locator</Nav.Link>
+                <Nav.Link as={NavLink} to = '/TermsOfServices'>Terms of Service</Nav.Link>
               </Nav>
             </Col>
 

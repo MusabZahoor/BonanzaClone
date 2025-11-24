@@ -13,6 +13,11 @@ import Sweaters from './pages/Sweaters'
 import Kids from './pages/Kids'
 import Socks from './pages/Socks'
 import FestiveEdit from './pages/FestiveEdit'
+import AboutUs from './pages/AboutUs'
+import TrackYourOrder from './pages/TrackYourOrder'
+import ShippingInformation from './pages/ShippingInformation'
+import StoreLocator from './pages/StoreLocator'
+import TermsOfServices from './pages/TermsOfServices'
 
 const App = () => {
   return (
@@ -32,11 +37,15 @@ const App = () => {
         <Route path='/kids' element={<Kids/>} />
         <Route path='/socks' element={<Socks/>} />
         <Route path='/FestiveEdit' element={<FestiveEdit/>} />
-        
-        
+        <Route path='/AboutUs' element={<AboutUs/>} />
+        <Route path='/TrackYourOrder' element={<TrackYourOrder/>} />
+        <Route path='/ShippingInformation' element={ <ShippingInformation/>} />
+        <Route path='/StoreLocator' element={ <StoreLocator/>} />
+        <Route path='/TermsOfServices' element={<TermsOfServices/>}/>
       </Routes>
+    <CloneFooter />
      </Router>
-     <CloneFooter />
+     
     </div>
   )
 }
