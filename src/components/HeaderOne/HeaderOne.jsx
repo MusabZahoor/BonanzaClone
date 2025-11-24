@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Nav, Container, Form, InputGroup } from "react-bootstrap";
 import { FaSearch, FaUser, FaTruck, FaHeart, FaShoppingBag } from "react-icons/fa";
 import "./HeaderOne.css"
+import { Link, NavLink } from 'react-router-dom';
 
 const HeaderOne = () => {
   return (
@@ -11,7 +12,7 @@ const HeaderOne = () => {
 
 <div style={{width:"150px"}}></div>
 
-<Navbar.Brand href="/" className="header-logo text-center mx-auto fw-bold fs-4" >
+<Navbar.Brand as={Link} to='/' className="header-logo text-center mx-auto fw-bold fs-4" >
   <img src='/images/logo.svg' alt='Bonanza Satrangi' style={{height:"45px"}}/>
 </Navbar.Brand>
 <div className='d-flex align-items-center gap-3 header-search'>
@@ -40,17 +41,17 @@ const HeaderOne = () => {
 <Navbar bg='white' expand='md' className='border-bottom py-2 wholeNavbar' style={{width:"95%"}}>
 <Container style={{fontSize:"18px"}}>
   <Nav className='mx-auto fw-semibold text-uppercase small lowerNavbar'>
-    <Nav.Link href='#' className='text-danger'>Sale</Nav.Link>
-    <Nav.Link href='#'>Ready To wear</Nav.Link>
-    <Nav.Link href='#'>Unstitched</Nav.Link>
-    <Nav.Link href='#'>Beauty</Nav.Link>
-    <Nav.Link href='#'>Fragrances</Nav.Link>
-    <Nav.Link href='#'>Men</Nav.Link>
-    <Nav.Link href='#'>Sweaters <sup className='text-danger fw-bold'>New</sup>
+    <Nav.Link as={NavLink} to="/sale" className='text-danger'>Sale</Nav.Link>
+    <Nav.Link as={NavLink} to='/ReadyToWear'>Ready To Wear</Nav.Link>
+    <Nav.Link as={NavLink} to='/unstitched'>Unstitched</Nav.Link>
+    <Nav.Link as={NavLink} to='/beauty'>Beauty</Nav.Link>
+    <Nav.Link as={NavLink} to='/fragrances'>Fragrances</Nav.Link>
+    <Nav.Link as={NavLink} to='/men'>Men</Nav.Link>
+    <Nav.Link as={NavLink} to='/sweaters'>Sweaters <sup className='text-danger fw-bold'>New</sup>
     </Nav.Link>
-    <Nav.Link href='#'>Kids</Nav.Link>
-    <Nav.Link href='#'>Socks</Nav.Link>
-    <Nav.Link href='#' className='fw-bold'>Festive Edit</Nav.Link>
+    <Nav.Link as={NavLink} to='/kids'>Kids</Nav.Link>
+    <Nav.Link as={NavLink} to='/socks'>Socks</Nav.Link>
+    <Nav.Link as={NavLink} to='/FestiveEdit' className='fw-bold'>Festive Edit</Nav.Link>
   </Nav>
 </Container>
 </Navbar>
