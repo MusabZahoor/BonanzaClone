@@ -8,7 +8,7 @@ const Unstitched = () => {
   return (
     <div className='d-flex flex-wrap justify-content-evenly m-4 '>
       {unstitchedProducts.map((product) => (
-        <ProductCard product={product} />
+        <ProductCard key={product.productId} product={product} />
       ))}
       </div>
   )
