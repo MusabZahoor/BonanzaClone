@@ -14,13 +14,6 @@
     "productCategory": "Women"
   },
   {
-    "productId": 3,
-    "productImg": "",
-    "productName": "GHI",
-    "productPrice": 3000,
-    "productCategory": "Kids"
-  },
-  {
     "productId": 4,
     "productImg": "./images/men2.webp",
     "productName": "Heritage (MU2PBW25Z9O2)",
@@ -130,42 +123,48 @@
     "productImg": "./images/women8.webp",
     "productName": "P-Yellow-Dobby-3 Piece (WPS25DE3036)",
     "productPrice": 10990,
-    "productCategory": "Women"
+    "productCategory": "Women",
+    "isFestive": true
   },
   {
     "productId": 19,
     "productImg": "./images/women9.webp",
     "productName": "L-Yellow-Dobby-3 Piece (WPS25DE3037)",
     "productPrice": 11990,
-    "productCategory": "Women"
+    "productCategory": "Women",
+    "isFestive": true
   },
   {
     "productId": 20,
     "productImg": "./images/women10.webp",
     "productName": "S-Blue-Jacquard-3 Piece (WPS25JD3043)",
     "productPrice": 10940,
-    "productCategory": "Women"
+    "productCategory": "Women",
+    "isFestive": true
   },
   {
     "productId": 21,
     "productImg": "./images/unstitch1.webp",
     "productName": "Ice - 3 Pc (WU3PPBS25KA8S3)",
     "productPrice": 5190,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isFestive": true
   },
   {
     "productId": 22,
     "productImg": "./images/unstitch2.webp",
     "productName": "Vintage Noir - 3 Pc (WU3PPBS25KA8S6)",
     "productPrice": 5190,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isFestive": true
   },
   {
     "productId": 23,
     "productImg": "./images/unstitch3.webp",
     "productName": "Festival Bloom - 3 Pc (WU3PPBS25LI8S16)",
     "productPrice": 3290,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isFestive": true
   },
   {
     "productId": 24,
@@ -179,21 +178,24 @@
     "productImg": "./images/unstitch5.webp",
     "productName": "Spell - 3 Pc (WU3PPBS25LI8S19)",
     "productPrice": 3290,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isOnSale": true
   },
   {
     "productId": 26,
     "productImg": "./images/unstitch6.webp",
     "productName": "Garden Tapestry - 3 Pc (WU3PPBS25LI8S2)",
     "productPrice": 3890,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isOnSale": true
   },
   {
     "productId": 27,
     "productImg": "./images/unstitch7.webp",
     "productName": "Ornamesh - 3 Pc (WU3PPBS25LI8S20)",
     "productPrice": 3890,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isOnSale": true
   },
   {
     "productId": 28,
@@ -214,7 +216,8 @@
     "productImg": "./images/unstitch10.webp",
     "productName": "Mughal Bloom - 3 Pc (WU3PPBS25LI8S5)",
     "productPrice": 4690,
-    "productCategory": "Unstitch"
+    "productCategory": "Unstitch",
+    "isFestive": true
   },
   {
     "productId": 31,
@@ -249,13 +252,334 @@
     "productImg": "./images/Beauty5.webp",
     "productName": "SUPERNOVA VOLUME LIPGLOSS",
     "productPrice": 2990,
-    "productCategory": "Beauty"
+    "productCategory": "Beauty",
+    "isOnSale": true
   },
   {
     "productId": 36,
     "productImg": "./images/Beauty6.webp",
     "productName": "PRO HD SOFT MATTE LIPSTICK",
     "productPrice": 2690,
+    "productCategory": "Beauty",
+    "isOnSale": true
+  },
+  {
+    "productId": 37,
+    "productImg": "./images/Beauty7.webp",
+    "productName": "Instyle Wet & Dry Powder",
+    "productPrice": 2990,
+    "productCategory": "Beauty",
+    "isOnSale": true
+  },
+  {
+    "productId": 38,
+    "productImg": "./images/Beauty8.webp",
+    "productName": "Natural Glow Cc Cream & Concealer",
+    "productPrice": 2990,
     "productCategory": "Beauty"
+  },
+  {
+    "productId": 39,
+    "productImg": "./images/Beauty9.webp",
+    "productName": "Sun Protect Anti Shine 50+ Spf",
+    "productPrice": 3080,
+    "productCategory": "Beauty"
+  },
+  {
+    "productId": 40,
+    "productImg": "./images/Beauty10.webp",
+    "productName": "Skinglow Hyaluronic Acid Facial Serum",
+    "productPrice": 3880,
+    "productCategory": "Beauty"
+  },
+  {
+    "productId": 41,
+    "productImg": "./images/Fragrances1.webp",
+    "productName": "MUSK ROYALE (100 ML)",
+    "productPrice": 7290,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 42,
+    "productImg": "./images/Fragrances2.webp",
+    "productName": "PURE ROMANCE (100 ML)",
+    "productPrice": 5290,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 43,
+    "productImg": "./images/Fragrances3.webp",
+    "productName": "ADDICTION (100 ML)",
+    "productPrice": 4990,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 44,
+    "productImg": "./images/Fragrances4.webp",
+    "productName": "Divine (100 ML)",
+    "productPrice": 5690,
+    "productCategory": "Fragrance",
+    "isNewArrival": true
+  },
+  {
+    "productId": 45,
+    "productImg": "./images/Fragrances5.webp",
+    "productName": "NOTORIOUS INTENSE (100 ML)",
+    "productPrice": 5290,
+    "productCategory": "Fragrance",
+    "isNewArrival": true
+  },
+  {
+    "productId": 46,
+    "productImg": "./images/Fragrances6.webp",
+    "productName": "HERO (100 ML)",
+    "productPrice": 4490,
+    "productCategory": "Fragrance",
+    "isNewArrival": true
+  },
+  {
+    "productId": 47,
+    "productImg": "./images/Fragrances7.webp",
+    "productName": "SECRET LOVE (100 ML)",
+    "productPrice": 5790,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 48,
+    "productImg": "./images/Fragrances8.webp",
+    "productName": "THE BOSS (100 ML)",
+    "productPrice": 4290,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 49,
+    "productImg": "./images/Fragrances9.webp",
+    "productName": "NOTORIOUS (100 ML)",
+    "productPrice": 5380,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 50,
+    "productImg": "./images/Fragrances10.webp",
+    "productName": "Victorious (100 ML)",
+    "productPrice": 6690,
+    "productCategory": "Fragrance"
+  },
+  {
+    "productId": 51,
+    "productImg": "./images/Sweaters1.webp",
+    "productName": "Blue-Round Neck Full Sleeves Cardigan Sweater (25Y-084-67)",
+    "productPrice": 11090,
+    "productCategory": "Sweaters",
+    "isNewArrival": true
+  },{
+    "productId": 52,
+    "productImg": "./images/Sweaters2.webp",
+    "productName": "Wheat-Turtle Neck Zipper Full Sleeves Sweater (912-14)",
+    "productPrice": 13990,
+    "productCategory": "Sweaters",
+    "isNewArrival": true
+  },
+  {
+    "productId": 53,
+    "productImg": "./images/Sweaters3.webp",
+    "productName": "Black-Round Neck Full Sleeves Cardigan Sweater (25Y-084-67)",
+    "productPrice": 11090,
+    "productCategory": "Sweaters",
+    "isNewArrival": true
+  },
+  {
+    "productId": 54,
+    "productImg": "./images/Sweaters4.webp",
+    "productName": "Mushroom-V-Neck Sando Sweater (670-14)",
+    "productPrice": 8590,
+    "productCategory": "Sweaters"
+  },
+  {
+    "productId": 55,
+    "productImg": "./images/Sweaters5.webp",
+    "productName": "White-Round Neck Full Sleeves Cardigan Sweater (25Y-084-67)",
+    "productPrice": 11090,
+    "productCategory": "Sweaters"
+  },{
+    "productId": 56,
+    "productImg": "./images/Sweaters6.webp",
+    "productName": "Moon Rock-V-Neck Sando Sweater (670-14)",
+    "productPrice": 8590,
+    "productCategory": "Sweaters",
+    "isOnSale": true
+  },
+  {
+    "productId": 57,
+    "productImg": "./images/Sweaters7.webp",
+    "productName": "Blue-V-Cardigan Full Sleeves Sweater (25Y-019-67)",
+    "productPrice": 9790,
+    "productCategory": "Sweaters",
+    "isOnSale": true
+  },
+  {
+    "productId": 58,
+    "productImg": "./images/Sweaters8.webp",
+    "productName": "D-Black-V-Neck Sando Sweater (670-14)",
+    "productPrice": 8590,
+    "productCategory": "Sweaters",
+    "isOnSale": true
+  },
+  {
+    "productId": 59,
+    "productImg": "./images/Sweaters9.webp",
+    "productName": "Red-V-Cardigan Full Sleeves Sweater (25Y-019-67)",
+    "productPrice": 9790,
+    "productCategory": "Sweaters"
+  },
+  {
+    "productId": 60,
+    "productImg": "./images/Sweaters10.webp",
+    "productName": "St-Grey-Round Turtle Neck Full Sleeves Sweater (852-14)",
+    "productPrice": 9590,
+    "productCategory": "Sweaters"
+  },
+  {
+    "productId": 61,
+    "productImg": "./images/kids1.webp",
+    "productName": "Multi-Slub-2 Piece (GP2PBW25BG9O9)",
+    "productPrice": 4190,
+    "productCategory": "Kids"
+  },
+  {
+    "productId": 62,
+    "productImg": "./images/kids2.webp",
+    "productName": "Red-Slub-2 Piece (GPSTPBW25BG9O3)",
+    "productPrice": 3890,
+    "productCategory": "Kids"
+  },
+  {
+    "productId": 63,
+    "productImg": "./images/kids3.webp",
+    "productName": "D-Teal-Cross Hatch-2 Piece (GPSTPBW25BG10N15)",
+    "productPrice": 4190,
+    "productCategory": "Kids"
+  },
+  {
+    "productId": 64,
+    "productImg": "./images/kids4.webp",
+    "productName": "Blue-Cambric-2 Piece (GPSTPBW25BG9O7)",
+    "productPrice": 3890,
+    "productCategory": "Kids"
+  },{
+    "productId": 65,
+    "productImg": "./images/kids5.webp",
+    "productName": "Multi-Viscose-1 Piece (GP1PPBS25BG7A13)",
+    "productPrice": 2990,
+    "productCategory": "Kids"
+  },
+  {
+    "productId": 66,
+    "productImg": "./images/kids6.webp",
+    "productName": "D-Grey-Blended-Kurta - (BPS25KU1022)",
+    "productPrice": 3490,
+    "productCategory": "Kids",
+    "isNewArrival": true
+  },
+  {
+    "productId": 67,
+    "productImg": "./images/kids7.webp",
+    "productName": "O-White-Blended-Shalwar Suit - (B25SS2031)",
+    "productPrice": 4890,
+    "productCategory": "Kids",
+    "isNewArrival": true
+  },
+  {
+    "productId": 68,
+    "productImg": "./images/kids8.webp",
+    "productName": "Maroon-Dobby-Kurta - (BPS25KU1015)",
+    "productPrice": 3490,
+    "productCategory": "Kids",
+    "isNewArrival": true
+  },
+  {
+    "productId": 69,
+    "productImg": "./images/kids9.webp",
+    "productName": "Navy Blue-Blended-Kurta Trouser - (B25KP2010)",
+    "productPrice": 4480,
+    "productCategory": "Kids"
+  },
+  {
+    "productId": 70,
+    "productImg": "./images/kids10.webp",
+    "productName": "Teal-Blended-Kurta Trouser - (B25KP2009)",
+    "productPrice": 4480,
+    "productCategory": "Kids"
+  },
+  {
+    "productId": 71,
+    "productImg": "./images/Socks1.webp",
+    "productName": "Dark Grey Low Cut Socks (MCLB3)",
+    "productPrice": 349,
+    "productCategory": "Socks"
+  },{
+    "productId": 72,
+    "productImg": "./images/Socks2.webp",
+    "productName": "Grey & White Low Cut Socks (MCLB2)",
+    "productPrice": 349,
+    "productCategory": "Socks"
+  },
+  {
+    "productId": 73,
+    "productImg": "./images/Socks3.webp",
+    "productName": "Grey Low Cut Socks (MCLG1)",
+    "productPrice": 349,
+    "productCategory": "Socks"
+  },
+  {
+    "productId": 74,
+    "productImg": "./images/Socks4.webp",
+    "productName": "Grey Invisible Socks (MCIG2)",
+    "productPrice": 349,
+    "productCategory": "Socks"
+  },{
+    "productId": 75,
+    "productImg": "./images/Socks5.webp",
+    "productName": "Grey & White Mid Calf Socks (MCMB1)",
+    "productPrice": 449,
+    "productCategory": "Socks"
+  },
+  {
+    "productId": 76,
+    "productImg": "./images/Socks6.webp",
+    "productName": "Olive Green Mid Calf Socks (WDMM3)",
+    "productPrice": 449,
+    "productCategory": "Socks"
+  },
+  {
+    "productId": 77,
+    "productImg": "./images/Socks7.webp",
+    "productName": "Black Mid Calf Socks (WDMB2)",
+    "productPrice": 449,
+    "productCategory": "Socks"
+  },
+  {
+    "productId": 78,
+    "productImg": "./images/Socks8.webp",
+    "productName": "Grey & White Mid Calf Socks (WCMG1)",
+    "productPrice": 449,
+    "productCategory": "Socks",
+    "isOnSale": true
+  },
+  {
+    "productId": 79,
+    "productImg": "./images/Socks9.webp",
+    "productName": "White Low Cut Socks (WCLW1)",
+    "productPrice": 349,
+    "productCategory": "Socks",
+    "isOnSale": true
+  },
+  {
+    "productId": 80,
+    "productImg": "./images/Socks10.webp",
+    "productName": "Off White Invisible Socks (WCIO2)",
+    "productPrice": 349,
+    "productCategory": "Socks",
+    "isOnSale": true
   }
 ]

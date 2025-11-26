@@ -18,6 +18,7 @@ import TrackYourOrder from './pages/TrackYourOrder'
 import ShippingInformation from './pages/ShippingInformation'
 import StoreLocator from './pages/StoreLocator'
 import TermsOfServices from './pages/TermsOfServices'
+import NewArrivals from './pages/NewArrivals'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<CloneCarousel />} />
         <Route path="/sale" element={<Sale/>} />
+        <Route path='/newArrivals' element={<NewArrivals/>} />
         <Route path='/ReadyToWear'  element={<ReadyToWear/>} />
         <Route path='/unstitched' element={<Unstitched/>} />
         <Route path="/beauty" element={<Beauty />} />

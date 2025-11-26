@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Nav, Container, Form, InputGroup } from "react-bootstrap";
-import { FaSearch, FaUser, FaTruck, FaHeart, FaShoppingBag } from "react-icons/fa";
+import { FiSearch, FiUser, FiTruck, FiHeart, FiShoppingBag } from "react-icons/fi";
 import "./HeaderOne.css";
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -34,16 +34,16 @@ const HeaderOne = () => {
                   placeholder='Search' 
                   className='border-0 border-bottom rounded-0 shadow-none'
                 />
-                <FaSearch className='search-icon' />
+                <FiSearch className='search-icon' />
               </InputGroup>
             </div>
             
             <div className='nav-icons-container'>
-              <FaUser title='Account' className='nav-icon' />
-              <FaTruck title='Orders' className='nav-icon' />
-              <FaHeart title='Wishlist' className='nav-icon' />
+              <FiUser title='Account' className='nav-icon' />
+              <FiTruck title='Orders' className='nav-icon' />
+              <FiHeart title='Wishlist' className='nav-icon' />
               <div className='cart-icon-container'>
-                <FaShoppingBag title='Cart' className='nav-icon' />
+                <FiShoppingBag title='Cart' className='nav-icon' />
                 {cartCount > 0 && (
                   <span className='cart-badge'>{cartCount}</span>
                 )}
@@ -58,12 +58,14 @@ const HeaderOne = () => {
         <Container style={{ fontSize: "18px" }}>
           <Nav className='mx-auto fw-semibold text-uppercase small lowerNavbar'>
             <Nav.Link as={NavLink} to="/sale" className='text-danger'>Sale</Nav.Link>
+            <Nav.Link as={NavLink} to='/newArrivals'>New Arrivals</Nav.Link>
             <Nav.Link as={NavLink} to='/ReadyToWear'>Ready To Wear</Nav.Link>
             <Nav.Link as={NavLink} to='/unstitched'>Unstitched</Nav.Link>
             <Nav.Link as={NavLink} to='/beauty'>Beauty</Nav.Link>
             <Nav.Link as={NavLink} to='/fragrances'>Fragrances</Nav.Link>
             <Nav.Link as={NavLink} to='/men'>Men</Nav.Link>
             <Nav.Link as={NavLink} to='/sweaters'>Sweaters <sup className='text-danger fw-bold'>New</sup></Nav.Link>
+            <Nav.Link as={NavLink} to='/kids'>Kids</Nav.Link>
             <Nav.Link as={NavLink} to='/socks'>Socks</Nav.Link>
             <Nav.Link as={NavLink} to='/FestiveEdit' className='fw-bold'>Festive Edit</Nav.Link>
           </Nav>

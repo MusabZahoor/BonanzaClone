@@ -46,6 +46,82 @@
     z-index: 1033;
 }
 
+/* Navigation Container */
+.lowerNavbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.lowerNavbar .nav-link {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.lowerNavbar .nav-link:hover {
+    color: #d81b60;
+}
+
+.lowerNavbar .nav-link.text-danger {
+    color: #d9232d;
+}
+
+.lowerNavbar .nav-link.fw-bold {
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .lowerNavbar .nav-link {
+    position: relative;
+    padding-right: 15px; /* Add space for the badge */
+  }
+
+  /* Adjust the specific sweaters link to accommodate the badge */
+  .lowerNavbar .nav-link:has(.new-badge) {
+    padding-right: 20px;
+    margin-right: 10px;
+  }
+
+  /* New badge styling - Desktop only */
+  .new-badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 600;
+    background-color: #d81b60;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    line-height: 1.2;
+    transform: translateX(50%);
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+}
+
+/* Hide new badge in mobile menu */
+.offcanvas .new-badge {
+  display: none;
+}
+
+/* New Badge - Base styles (overridden by desktop-specific styles) */
+.new-badge {
+  display: none; /* Hide by default, shown only in desktop nav */
+}
+
 /* Lower Navigation Bar */
 .wholeNavbar {
     border-bottom: 1px solid #eee;

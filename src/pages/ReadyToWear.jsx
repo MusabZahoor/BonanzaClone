@@ -1,16 +1,43 @@
-import React from 'react'
+import React from 'react';
 import { useSelector } from 'react-redux';
 import ProductCard from '../Card/ProductCard.jsx';
+
 const ReadyToWear = () => {
   const products = useSelector((state) => state.products);
-  const Women = products.filter((product) => product.productCategory ==="Women");
-  return (
-    <div className='d-flex flex-wrap justify-content-evenly m-4 '>
-      {Women.map((product) => (
-        <ProductCard key={product.productId} product={product} />
-      ))}
-    </div>
-  )
-}
+  
+  // Debug: Log the products to check what's in the store
+  console.log('All products:', products);
+  
+  const womenProducts = products.filter((product) => 
+    product.productCategory === 'Women' || product.productCategory === 'women'
+  );
 
-export default ReadyToWear
+  // Debug: Log the filtered products
+  console.log('Filtered women products:', womenProducts);
+
+  if (womenProducts.length === 0) {
+    return (
+      <div className='text-center m-5'>
+        <h3>No products found in the Women's category</h3>
+        <p>Check the console for debugging information</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className='d-flex flex-wrap justify-content-evenly m-4'>
+      {womenProducts.map((product) => {
+        // Fix image path if it starts with ./
+        const fixedProduct = {
+          ...product,
+          productImg: product.productImg.startsWith('./') 
+            ? product.productImg.substring(1) 
+            : product.productImg
+        };
+        return <ProductCard key={product.productId} product={fixedProduct} />;
+      })}
+    </div>
+  );
+};
+
+export default ReadyToWear;
