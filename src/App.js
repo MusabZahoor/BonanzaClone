@@ -19,6 +19,7 @@ import ShippingInformation from './pages/ShippingInformation'
 import StoreLocator from './pages/StoreLocator'
 import TermsOfServices from './pages/TermsOfServices'
 import NewArrivals from './pages/NewArrivals'
+import ProductDetails from './components/ProductDetails/ProductDetails.jsx'
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Route path='/ShippingInformation' element={ <ShippingInformation/>} />
         <Route path='/StoreLocator' element={ <StoreLocator/>} />
         <Route path='/TermsOfServices' element={<TermsOfServices/>}/>
+        <Route path='/product/:id' element={<ProductDetails/>} />
       </Routes>
     <CloneFooter />
      </Router>

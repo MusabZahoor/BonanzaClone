@@ -1,12 +1,12 @@
 
-import { Container, Row, Col, Form, Button, Nav } from "react-bootstrap";
+import { Container, Row, Col, Form,  Nav } from "react-bootstrap";
 import { FaInstagram, FaFacebook } from "react-icons/fa"; 
 import "./CloneFooter.css"; 
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 const CloneFooter = () => {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer mt-5 bg-light pt-4 border-top textdecoration-none">
       <Container fluid className="footer-top py-5">
         <Container>
           <Row className="gy-4">
@@ -23,7 +23,7 @@ const CloneFooter = () => {
               </div>
             </Col>
 
-            <Col xs={12} md={6} lg={3}>
+            <Col xs={12} md={6} lg={3} className="textdecoration-none text-dark">
               <h5 className="footer-title">INFORMATION</h5>
               <Nav className="flex-column">
                 <Nav.Link as={NavLink} to='/AboutUs'>About Us</Nav.Link>

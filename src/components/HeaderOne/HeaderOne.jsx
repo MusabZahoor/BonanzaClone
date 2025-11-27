@@ -1,15 +1,27 @@
-import React from 'react';
-import { Navbar, Nav, Container, Form, InputGroup } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Navbar, Nav, Container, Form, InputGroup, Badge, Offcanvas } from "react-bootstrap";
 import { FiSearch, FiUser, FiTruck, FiHeart, FiShoppingBag } from "react-icons/fi";
 import "./HeaderOne.css";
 import { Link, NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import Cart from '../Cart/Cart';
 
 const HeaderOne = () => {
-  const cartCount = useSelector((state) => state.cart?.count ?? 0);
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart || { count: 0, items: [] });
+  
+  const [showCart, setShowCart] = useState(false);
+
+  const toggleCart = () => setShowCart(!showCart);
+  const closeCart = () => setShowCart(false);
+
+  useEffect(() => {
+    console.log('Current cart state:', cart);
+  }, [cart]);
 
   return (
     <div className="header-container">
+      <Cart show={showCart} handleClose={closeCart} />
       {/* Top Navigation Bar */}
       <Navbar bg="white" expand="lg" className="header-top" style={{ width: "95%" }}>
         <Container className="d-flex justify-content-between align-items-center">
@@ -41,13 +53,22 @@ const HeaderOne = () => {
             <div className='nav-icons-container'>
               <FiUser title='Account' className='nav-icon' />
               <FiTruck title='Orders' className='nav-icon' />
-              <FiHeart title='Wishlist' className='nav-icon' />
-              <div className='cart-icon-container'>
-                <FiShoppingBag title='Cart' className='nav-icon' />
-                {cartCount > 0 && (
-                  <span className='cart-badge'>{cartCount}</span>
+              <Nav.Link as={Link} to="/wishlist" className="nav-icon">
+                <FiHeart size={20} />
+              </Nav.Link>
+              <Nav.Link className="nav-icon position-relative" onClick={toggleCart} style={{ cursor: 'pointer' }}>
+                <FiShoppingBag size={20} />
+                {cart.count > 0 && (
+                  <Badge 
+                    bg="dark" 
+                    className="position-absolute top-0 start-100 translate-middle rounded-circle"
+                    style={{ fontSize: '0.6rem', padding: '0.25rem 0.4rem' }}
+                  >
+                    {cart.count}
+                  </Badge>
                 )}
-              </div>
+              </Nav.Link>
+
             </div>
           </div>
         </Container>
