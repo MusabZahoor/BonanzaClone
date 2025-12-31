@@ -1,6 +1,7 @@
 
 import { Container, Row, Col, Form,  Nav } from "react-bootstrap";
-import { FaInstagram, FaFacebook } from "react-icons/fa"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import "./CloneFooter.css"; 
 import {  NavLink } from "react-router-dom";
 
@@ -18,8 +19,8 @@ const CloneFooter = () => {
               <small className="d-block">Mon–Sat: 9:30 AM – 10:00 PM PKT</small>
               <small className="d-block">Sun: 11:00 AM – 8:00 PM PKT</small>
               <div className="social-icons mt-2">
-                <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="facebook"><FaFacebook /></a>
-                <a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="instagram" className="ms-3"><FaInstagram /></a>
+                <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="facebook"><FontAwesomeIcon icon={faFacebookF} /></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="instagram" className="ms-3"><FontAwesomeIcon icon={faInstagram} /></a>
               </div>
             </Col>
 

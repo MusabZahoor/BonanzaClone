@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Offcanvas, Button, Row, Col } from 'react-bootstrap';
-import { FiX, FiPlus, FiMinus, FiTrash2, FiEdit } from 'react-icons/fi';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMinus, faPen, faPlus, faTrash, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Cart.css';
@@ -130,7 +131,7 @@ const Cart = ({ show, handleClose }) => {
                           className="text-dark p-0"
                           onClick={() => handleRemove(item.id)}
                         >
-                          <FiX size={20} />
+                          <FontAwesomeIcon icon={faXmark} style={{ fontSize: 20 }} />
                         </Button>
                       </div>
                       <div className="d-flex align-items-center justify-content-between">
@@ -141,7 +142,7 @@ const Cart = ({ show, handleClose }) => {
                             className="p-1"
                             onClick={() => handleDecrement(item)}
                           >
-                            <FiMinus size={14} />
+                            <FontAwesomeIcon icon={faMinus} style={{ fontSize: 14 }} />
                           </Button>
                           <span className="mx-2">{item.quantity}</span>
                           <Button 
@@ -150,19 +151,19 @@ const Cart = ({ show, handleClose }) => {
                             className="p-1"
                             onClick={() => handleIncrement(item)}
                           >
-                            <FiPlus size={14} />
+                            <FontAwesomeIcon icon={faPlus} style={{ fontSize: 14 }} />
                           </Button>
                         </div>
                         <div>
                           <Button variant="link" className="text-dark p-0 me-2">
-                            <FiEdit size={16} />
+                            <FontAwesomeIcon icon={faPen} style={{ fontSize: 16 }} />
                           </Button>
                           <Button 
                             variant="link" 
                             className="text-dark p-0"
                             onClick={() => handleRemove(item.id)}
                           >
-                            <FiTrash2 size={16} />
+                            <FontAwesomeIcon icon={faTrash} style={{ fontSize: 16 }} />
                           </Button>
                         </div>
                       </div>
@@ -189,20 +190,21 @@ const Cart = ({ show, handleClose }) => {
               <span>{formatPrice(calculateTotal())}</span>
             </div>
 
-            <div className="d-grid gap-2">
+            <div className="d-flex flex-column align-items-center gap-2">
               <Button 
                 as={Link} 
                 to="/checkout" 
                 variant="dark" 
-                size="lg"
-                className="mb-2"
+                size="sm"
+                className="px-5"
                 onClick={handleClose}
               >
                 CHECKOUT
               </Button>
               <Button 
                 variant="outline-dark" 
-                size="lg"
+                size="sm"
+                className="px-5"
                 onClick={handleClose}
               >
                 CONTINUE SHOPPING

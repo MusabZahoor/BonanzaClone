@@ -1,6 +1,4 @@
 import { createStore, combineReducers } from "redux";
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 import Products from "./Products.json";
 
 const ProductReducer = (state = Products, action) => {
@@ -91,18 +89,9 @@ const CartReducer = (state = initialCartState, action) => {
   }
 };
 
-const persistConfig = {
-  key: 'root',
-  storage,
-  whitelist: ['cart'] // Only persist the cart reducer
-};
-
 const rootReducer = combineReducers({
   products: ProductReducer,
   cart: CartReducer,
 });
 
-const persistedReducer = persistReducer(persistConfig, rootReducer);
-
-export const store = createStore(persistedReducer);
-export const persistor = persistStore(store);
+export const store = createStore(rootReducer);

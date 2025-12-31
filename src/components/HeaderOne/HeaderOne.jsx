@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container, Form, InputGroup, Badge, Offcanvas } from "react-bootstrap";
-import { FiSearch, FiUser, FiTruck, FiHeart, FiShoppingBag } from "react-icons/fi";
+import { Navbar, Nav, Container, Form, InputGroup, Badge } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBagShopping, faMagnifyingGlass, faTruck, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import "./HeaderOne.css";
 import { Link, NavLink } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -46,18 +48,18 @@ const HeaderOne = () => {
                   placeholder='Search' 
                   className='border-0 border-bottom rounded-0 shadow-none'
                 />
-                <FiSearch className='search-icon' />
+                <FontAwesomeIcon icon={faMagnifyingGlass} className='search-icon' />
               </InputGroup>
             </div>
             
             <div className='nav-icons-container'>
-              <FiUser title='Account' className='nav-icon' />
-              <FiTruck title='Orders' className='nav-icon' />
+              <FontAwesomeIcon icon={faUser} title='Account' className='nav-icon' />
+              <FontAwesomeIcon icon={faTruck} title='Orders' className='nav-icon' />
               <Nav.Link as={Link} to="/wishlist" className="nav-icon">
-                <FiHeart size={20} />
+                <FontAwesomeIcon icon={faHeart} style={{ fontSize: 20 }} />
               </Nav.Link>
               <Nav.Link className="nav-icon position-relative" onClick={toggleCart} style={{ cursor: 'pointer' }}>
-                <FiShoppingBag size={20} />
+                <FontAwesomeIcon icon={faBagShopping} style={{ fontSize: 20 }} />
                 {cart.count > 0 && (
                   <Badge 
                     bg="dark" 

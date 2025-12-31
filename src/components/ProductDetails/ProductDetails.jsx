@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Container, Row, Col, Button, Image, Form, InputGroup } from 'react-bootstrap';
-import { FiArrowLeft, FiPlus, FiMinus, FiHeart, FiShare2, FiFacebook, FiTwitter, FiInstagram } from 'react-icons/fi';
+import { Container, Row, Col, Button, Form } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import './ProductDetails.css';
 
 const ProductDetails = () => {
@@ -19,7 +22,7 @@ const ProductDetails = () => {
       <Container className="py-5 text-center">
         <h2>Product not found</h2>
         <Button variant="outline-dark" onClick={() => navigate(-1)} className="mt-3">
-          <FiArrowLeft className="me-2" /> Back to Shop
+          <FontAwesomeIcon icon={faArrowLeft} className="me-2" /> Back to Shop
         </Button>
       </Container>
     );
@@ -72,7 +75,7 @@ const ProductDetails = () => {
         onClick={() => navigate(-1)} 
         className="text-dark mb-4 d-flex align-items-center p-0"
       >
-        <FiArrowLeft className="me-2" /> Back to Shop
+        <FontAwesomeIcon icon={faArrowLeft} className="me-2" /> Back to Shop
       </Button>
       
       <Row className="g-4">
@@ -129,7 +132,7 @@ const ProductDetails = () => {
                 onClick={decrementQuantity}
                 className="rounded-0"
               >
-                <FiMinus />
+                <FontAwesomeIcon icon={faMinus} />
               </Button>
               <Form.Control 
                 type="number" 
@@ -144,22 +147,22 @@ const ProductDetails = () => {
                 onClick={incrementQuantity}
                 className="rounded-0"
               >
-                <FiPlus />
+                <FontAwesomeIcon icon={faPlus} />
               </Button>
             </div>
           </div>
           
-          <div className="d-flex gap-3 mb-4">
+          <div className="d-flex justify-content-center gap-3 mb-4">
             <Button 
               variant="dark" 
-              size="lg" 
-              className="flex-grow-1"
+              size="sm" 
+              className="px-5"
               onClick={handleAddToCart}
             >
               Add to Cart
             </Button>
             <Button variant="outline-dark" size="lg">
-              <FiHeart size={20} />
+              <FontAwesomeIcon icon={faHeart} style={{ fontSize: 20 }} />
             </Button>
           </div>
           
@@ -172,13 +175,13 @@ const ProductDetails = () => {
               <strong className="me-2">Share:</strong>
               <div className="d-flex gap-2">
                 <Button variant="link" className="p-0 text-dark">
-                  <FiFacebook size={20} />
+                  <FontAwesomeIcon icon={faFacebookF} style={{ fontSize: 20 }} />
                 </Button>
                 <Button variant="link" className="p-0 text-dark">
-                  <FiTwitter size={20} />
+                  <FontAwesomeIcon icon={faTwitter} style={{ fontSize: 20 }} />
                 </Button>
                 <Button variant="link" className="p-0 text-dark">
-                  <FiInstagram size={20} />
+                  <FontAwesomeIcon icon={faInstagram} style={{ fontSize: 20 }} />
                 </Button>
               </div>
             </div>
